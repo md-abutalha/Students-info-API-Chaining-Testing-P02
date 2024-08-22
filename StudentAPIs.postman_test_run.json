@@ -1,0 +1,189 @@
+{
+	"id": "5565a85c-4b9c-4616-8096-87b51f3749b0",
+	"name": "StudentAPIs",
+	"timestamp": "2024-08-22T04:16:26.894Z",
+	"collection_id": "37041522-c86e1e3d-627a-49d0-938b-1a94b31dabcd",
+	"folder_id": 0,
+	"environment_id": "37041522-a66837fa-ee99-4a35-8ff9-a0f3769b6c2f",
+	"totalPass": 5,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-08-22T04:16:25.900Z",
+	"totalFail": 4,
+	"results": [
+		{
+			"id": "ec65e89f-6c05-44b6-a3d0-5450ae82962f",
+			"name": "Get Single Student Data",
+			"url": "http://localhost:3000/students/1",
+			"time": 10,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				10
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "2b5ba554-c584-4aa5-be14-3a3b443855bb",
+			"name": "Get All Student Data",
+			"url": "http://localhost:3000/students",
+			"time": 7,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Content-Type header is present": true,
+				"Content-Type header is application/json": true,
+				"Content-Length header is correct": false,
+				"Response time is less than 200ms": true,
+				"Test Array Properties": false,
+				"Value of last name is 'Smith'": false,
+				"Value of last name is: Smith": true,
+				"Json Schema Validate": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Length header is correct": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Test Array Properties": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Value of last name is 'Smith'": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Value of last name is: Smith": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Json Schema Validate": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				7
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Content-Type header is present": true,
+					"Content-Type header is application/json": true,
+					"Content-Length header is correct": false,
+					"Response time is less than 200ms": true,
+					"Test Array Properties": false,
+					"Value of last name is 'Smith'": false,
+					"Value of last name is: Smith": true,
+					"Json Schema Validate": false
+				}
+			]
+		},
+		{
+			"id": "a73ea368-04af-4ff8-afb2-b938c84599bb",
+			"name": "Create New Student",
+			"url": "http://localhost:3000/students",
+			"time": 8,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				8
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "6f8d7e58-cd4c-4eb1-86eb-1a2e01c8c3ce",
+			"name": "Update Student",
+			"url": "http://localhost:3000/students/d327",
+			"time": 4,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				4
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "b3cf8721-0ef3-4cc7-aef9-c1097dc8e461",
+			"name": "Delete Single Data",
+			"url": "http://localhost:3000/students/5",
+			"time": 5,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				5
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 34,
+	"collection": {
+		"requests": [
+			{
+				"id": "ec65e89f-6c05-44b6-a3d0-5450ae82962f",
+				"method": "GET"
+			},
+			{
+				"id": "2b5ba554-c584-4aa5-be14-3a3b443855bb",
+				"method": "GET"
+			},
+			{
+				"id": "a73ea368-04af-4ff8-afb2-b938c84599bb",
+				"method": "POST"
+			},
+			{
+				"id": "6f8d7e58-cd4c-4eb1-86eb-1a2e01c8c3ce",
+				"method": "PUT"
+			},
+			{
+				"id": "b3cf8721-0ef3-4cc7-aef9-c1097dc8e461",
+				"method": "DELETE"
+			}
+		]
+	}
+}

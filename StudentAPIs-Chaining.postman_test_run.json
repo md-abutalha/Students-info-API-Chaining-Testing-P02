@@ -1,0 +1,88 @@
+{
+	"id": "28f5d6e5-8da4-4bcc-a8c5-3aa4885fc14c",
+	"name": "StudentAPIs-Chaining",
+	"timestamp": "2024-08-22T04:29:01.198Z",
+	"collection_id": "37041522-ccde759f-cc2f-4db5-b735-4c3ed3a7b3d7",
+	"folder_id": 0,
+	"environment_id": "37041522-a66837fa-ee99-4a35-8ff9-a0f3769b6c2f",
+	"totalPass": 0,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-08-22T04:29:00.171Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "7af669fa-c83e-4d10-b2b6-137757c82c94",
+			"name": "Create New Student",
+			"url": "http://localhost:3000/students/",
+			"time": 10,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				10
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "64fe5b51-e1b2-435b-b022-c7a06a420545",
+			"name": "Get Single Student Data",
+			"url": "http://localhost:3000/students/30",
+			"time": 4,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				4
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "01bfb90e-b547-451b-8df8-bd52112f43eb",
+			"name": "Delete Single Data",
+			"url": "http://localhost:3000/students/30",
+			"time": 9,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				9
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 23,
+	"collection": {
+		"requests": [
+			{
+				"id": "7af669fa-c83e-4d10-b2b6-137757c82c94",
+				"method": "POST"
+			},
+			{
+				"id": "64fe5b51-e1b2-435b-b022-c7a06a420545",
+				"method": "GET"
+			},
+			{
+				"id": "01bfb90e-b547-451b-8df8-bd52112f43eb",
+				"method": "DELETE"
+			}
+		]
+	}
+}
